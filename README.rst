@@ -6,12 +6,12 @@ iWoT 入門教學
 入門教學包含下列文件
 
 - `WoT 及 iWoT 基本觀念介紹 <./core_concept>`_
-- `Hello! - LED 燈控制 - 以 LinkIt Smart 7688 Duo 為例 <./101>`_
-- `磁簧開關 - 以 LinkIt Smart 7688 Duo 為例 <./102>`_
-- `透過通訊軟體 LINE 控制 LED 燈 <./103>`_
-- `App Creator 控制 LED 燈 <./104>`_
-- `操控光敏電阻 - 以 NodeMCU v3 為例 <./105>`_
-- `光敏電阻與風扇的互動 - 以 NodeMCU v3 為例 <./106>`_
+- `101 Hello! - LED 燈控制 - 以 LinkIt Smart 7688 Duo 為例 <./101>`_
+- `102 磁簧開關 - 以 LinkIt Smart 7688 Duo 為例 <./102>`_
+- `103 透過通訊軟體 LINE 控制 LED 燈 <./103>`_
+- `104 App Creator 控制 LED 燈 <./104>`_
+- `105 操控光敏電阻 - 以 NodeMCU v3 為例 <./105>`_
+- `106 光敏電阻與風扇的互動 - 以 NodeMCU v3 為例 <./106>`_
 
 更多教學資源請參閱 `iWoT 論壇 <http://forum.iwot.io/>`_
 。
