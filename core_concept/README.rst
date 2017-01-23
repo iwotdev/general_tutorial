@@ -67,15 +67,11 @@ tags：裝置的標簽，一個字串的陣列，用來標示裝置的特徵。t
 
 customFields：使用者自定的 JSON Object，可以包含數個鍵值(key-value pair)。customFields 是選填的欄位。
 
-actions：描述裝置可被觸發的動作，必需包含一個 id，如果動作需要有參數，可在 values 物件裏存放多個參數物件。請參閱
-`*Value Object* <#ns3o9hpfv6m4>`__\ 。
+actions：描述裝置可被觸發的動作，必需包含一個 id，如果動作需要有參數，可在 values 物件裏存放多個參數物件。請參閱 *Value Object*。
 
-properties：描述裝置的屬性，必需包含一個
-id，一個屬性可以包含多個屬性值，存放在 values 物件裏。請參閱 `*Value
-Object* <#ns3o9hpfv6m4>`__\ 。
+properties：描述裝置的屬性，必需包含一個 id，一個屬性可以包含多個屬性值，存放在 values 物件裏。請參閱 *Value Object*。
 
-events：描述裝置的事件，必需包含一個id，如果事件需要有參數，可在"values"物件裏存放多個參數物件。請參閱
-`*Value Object* <#ns3o9hpfv6m4>`__\ 。
+events：描述裝置的事件，必需包含一個id，如果事件需要有參數，可在"values"物件裏存放多個參數物件。請參閱 *Value Object*。
 
 ::
 
@@ -90,28 +86,18 @@ events：描述裝置的事件，必需包含一個id，如果事件需要有參
       }
     }
 
-system：描述裝置的系統資訊，必需包含一個 firmwareVersion。system
-是選填的欄位。
+system：描述裝置的系統資訊，必需包含一個 firmwareVersion。system 是選填的欄位。
 
 Value Object：
 
 -  valueID：參數值的ID，必需在values物件中唯一的ID。
-
 -  name：參數值的名稱，主要的用途是讓使用者識別參數值，可以是任意的字串。name是選填的欄位。
-
 -  description：參數值的詳細描述。description是選填的欄位。
-
--  type：參數值的型態，支援的資料型態為：integer, float, boolean, >
-   string, >
-   enum。type是選填的欄位，如果有填寫參數型態，iWoT會驗證參數值型態。
-
--  unit：參數值的單位，主要的用途是讓使用者識別參數值的單位。unit是選填的欄位。
-
--  require：參數值是否為必要欄位。require是選填欄位，如果有填寫，iWoT會驗證訊息是否包含必要參數值。
-
--  minValue：參數值的最小值。minValue是選填欄位，如果有填寫，iWoT會驗證參數值是否符合限制。
-
--  maxValue：參數值的最大值。maxValue是選填欄位，如果有填寫，iWoT會驗證參數值是否符合限制。
+-  type：參數值的型態，支援的資料型態為：integer, float, boolean, string, enum。type 是選填的欄位，如果有填寫參數型態，iWoT 會驗證參數值型態。
+-  unit：參數值的單位，主要的用途是讓使用者識別參數值的單位。unit 是選填的欄位。
+-  require：參數值是否為必要欄位。require 是選填欄位，如果有填寫，iWoT 會驗證訊息是否包含必要參數值。
+-  minValue：參數值的最小值。minValue 是選填欄位，如果有填寫，iWoT 會驗證參數值是否符合限制。
+-  maxValue：參數值的最大值。maxValue 是選填欄位，如果有填寫，iWoT 會驗證參數值是否符合限制。
 
 ::
 
@@ -132,10 +118,10 @@ Value Object：
       ...
     }
 
-Build-in Actions
+內建 Actions
 ----------------
 
-iWoT系統內建三個系統服務使用的Actions，使用者不可以定義相同名稱的action。
+iWoT 系統內建三個系統服務使用的 Actions，使用者不可以定義相同名稱的action。
 
 **upgradeFirmware: iWoT用於發送韌體更新動作。**
 
@@ -189,7 +175,7 @@ iWoT系統內建三個系統服務使用的Actions，使用者不可以定義相
         }
     }
 
-**createTunne: 用於建立全域規則引擎和裝置閘道規則引擎之間的通訊。**
+**createTunnel: 用於建立裝置閘道規則引擎的通訊。**
 
 ::
 
@@ -222,7 +208,7 @@ iWoT系統內建三個系統服務使用的Actions，使用者不可以定義相
         }
     }
 
-**closeTunnel: 用於關閉全域規則引擎和裝置閘道規則引擎之間的通訊。**
+**closeTunnel: 用於關閉裝置閘道規則引擎的通訊。**
 
 ::
 
@@ -237,7 +223,7 @@ iWoT系統內建三個系統服務使用的Actions，使用者不可以定義相
 範例
 ----
 
-基本溫度感應器的Web Thing Model：
+基本溫度感應器的 Web Thing Model：
 
 ::
 
