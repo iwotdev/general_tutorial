@@ -90,9 +90,9 @@ system：描述裝置的系統資訊，必需包含一個 firmwareVersion。syst
 
 Value Object：
 
--  valueID：參數值的ID，必需在values物件中唯一的ID。
--  name：參數值的名稱，主要的用途是讓使用者識別參數值，可以是任意的字串。name是選填的欄位。
--  description：參數值的詳細描述。description是選填的欄位。
+-  valueID：參數值的 ID，必需在 values 物件中唯一的 ID。
+-  name：參數值的名稱，主要的用途是讓使用者識別參數值，可以是任意的字串。name 是選填的欄位。
+-  description：參數值的詳細描述。description 是選填的欄位。
 -  type：參數值的型態，支援的資料型態為：integer, float, boolean, string, enum。type 是選填的欄位，如果有填寫參數型態，iWoT 會驗證參數值型態。
 -  unit：參數值的單位，主要的用途是讓使用者識別參數值的單位。unit 是選填的欄位。
 -  require：參數值是否為必要欄位。require 是選填欄位，如果有填寫，iWoT 會驗證訊息是否包含必要參數值。
@@ -121,7 +121,7 @@ Value Object：
 內建 Actions
 ----------------
 
-iWoT 系統內建三個系統服務使用的 Actions，使用者不可以定義相同名稱的action。
+iWoT 系統內建三個系統服務使用的 Actions，使用者不可以定義相同名稱的 action。
 
 **upgradeFirmware: iWoT用於發送韌體更新動作。**
 
@@ -416,7 +416,7 @@ iWoT 系統內建三個系統服務使用的 Actions，使用者不可以定義�
 Web Thing Model
 ---------------
 
-`*https://www.w3.org/Submission/2015/SUBM-wot-model-20150824/* <https://www.w3.org/Submission/2015/SUBM-wot-model-20150824/>`__
+`https://www.w3.org/Submission/2015/SUBM-wot-model-20150824/ <https://www.w3.org/Submission/2015/SUBM-wot-model-20150824/>`__
 
 .. |1| image:: https://raw.githubusercontent.com/iwotdev/general_tutorial/master/core_concept/images/1.png
 .. |2| image:: https://raw.githubusercontent.com/iwotdev/general_tutorial/master/core_concept/images/2.png
